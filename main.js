@@ -13,9 +13,11 @@ function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 718, 
-    height: 610, 
+    height: 480, 
     toolbar: false, 
     resizable: false,
+    frame: false,
+    movable: true,
     icon: __dirname + "/imagens/icon.png"
   })
 

@@ -40,33 +40,38 @@
     font-size: 40px;
 }
 
-.titebar{
+#titebar{
     background-color: #3c4a4e;
     right: 90px;
 }
 
-.exit{
+#exit-btn{
     height: 40px;
     width: 80px;
     background-color: #3c4a4e;
     border-style: none;
 }
 
-.exit:hover{
+#exit-btn:hover{
     background-color: #eb4960;
 }
 
-.minimize{
+#minimize-btn{
     height: 40px;
     width: 60px;
     background-color: #3c4a4e;
     border-style: none;
 }
 
-.minimize:hover{
+#minimize-btn:hover{
     background-color: #636e71;
 }
 
 .img-titlebar{
     width: 10px;
+}
+
+.img-icon{
+    width: 25px;
+    height: 25px;
 }

@@ -15,7 +15,8 @@ function createWindow () {
     width: 718, 
     height: 469, 
     toolbar: false, 
-    resizable: false
+    resizable: false,
+    icon: __dirname + "/icon.png"
   })
 
   mainWindow.setMenu(null);

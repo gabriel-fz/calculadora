@@ -16,36 +16,44 @@
 <body>
   <div class="window">
     <div class="window-content">
+      <div class="titebar text-right">
+          <button class="minimize">
+              <img src="imagens/minimize.png" class="img-titlebar">
+          </button>
+          <button class="exit">
+              <img src="imagens/exit.png" class="img-titlebar">
+          </button>
+      </div>
       <div class="calculadora">
         <div class="row">
           <div class="conta">
             <p class="texto-conta text-right align-middle"></p>
           </div>
-          <button id="apagar" class="btn" onclick="delConta()">del</button>
+          <button class="btn" onclick="delConta()">del</button>
         </div>
         <div class="row">
-          <button id="apagar" class="btn" onclick="preencherTela(7)">7</button>
-          <button id="apagar" class="btn" onclick="preencherTela(8)">8</button>
-          <button id="apagar" class="btn" onclick="preencherTela(9)">9</button>
-          <button id="apagar" class="btn" onclick="preencherTela('*')">X</button>
+          <button class="btn" onclick="preencherTela(7)">7</button>
+          <button class="btn" onclick="preencherTela(8)">8</button>
+          <button class="btn" onclick="preencherTela(9)">9</button>
+          <button class="btn" onclick="preencherTela('*')">X</button>
         </div>
         <div class="row">
-          <button id="apagar" class="btn" onclick="preencherTela(4)">4</button>
-          <button id="apagar" class="btn" onclick="preencherTela(5)">5</button>
-          <button id="apagar" class="btn" onclick="preencherTela(6)">6</button>
-          <button id="apagar" class="btn" onclick="preencherTela('/')">/</button>
+          <button class="btn" onclick="preencherTela(4)">4</button>
+          <button class="btn" onclick="preencherTela(5)">5</button>
+          <button class="btn" onclick="preencherTela(6)">6</button>
+          <button class="btn" onclick="preencherTela('/')">/</button>
         </div>
         <div class="row">
-          <button id="apagar" class="btn" onclick="preencherTela(1)">1</button>
-          <button id="apagar" class="btn" onclick="preencherTela(2)">2</button>
-          <button id="apagar" class="btn" onclick="preencherTela(3)">3</button>
-          <button id="apagar" class="btn" onclick="preencherTela('+')">+</button>
+          <button class="btn" onclick="preencherTela(1)">1</button>
+          <button class="btn" onclick="preencherTela(2)">2</button>
+          <button class="btn" onclick="preencherTela(3)">3</button>
+          <button class="btn" onclick="preencherTela('+')">+</button>
         </div>
         <div class="row">
-          <button id="apagar" class="btn" onclick="preencherTela('.')">.</button>
-          <button id="apagar" class="btn" onclick="preencherTela(0)">0</button>
-          <button id="apagar" class="btn" onclick="mostraResultado()">=</button>
-          <button id="apagar" class="btn" onclick="preencherTela('-')">-</button>
+          <button class="btn" onclick="preencherTela('.')">.</button>
+          <button class="btn" onclick="preencherTela(0)">0</button>
+          <button class="btn" onclick="mostraResultado()">=</button>
+          <button class="btn" onclick="preencherTela('-')">-</button>
         </div>
       </div>
     </div>

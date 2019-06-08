@@ -39,3 +39,34 @@
     padding-left: 10px;
     font-size: 40px;
 }
+
+.titebar{
+    background-color: #3c4a4e;
+    right: 90px;
+}
+
+.exit{
+    height: 40px;
+    width: 80px;
+    background-color: #3c4a4e;
+    border-style: none;
+}
+
+.exit:hover{
+    background-color: #eb4960;
+}
+
+.minimize{
+    height: 40px;
+    width: 60px;
+    background-color: #3c4a4e;
+    border-style: none;
+}
+
+.minimize:hover{
+    background-color: #636e71;
+}
+
+.img-titlebar{
+    width: 10px;
+}

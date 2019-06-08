@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="funcoesCalculadora.js"></script>
+
+</head>
+
+<body>
+  <div class="window">
+    <div class="window-content">
+      <div class="container">
+        <div class="row">
+          <div class="conta">
+            <p class="texto-conta text-right align-middle"></p>
+          </div>
+          <button id="apagar" class="btn" onclick="delConta()">dele</button>
+        </div>
+        <div class="row">
+          <button id="apagar" class="btn" onclick="preencherTela(7)">7</button>
+          <button id="apagar" class="btn" onclick="preencherTela(8)">8</button>
+          <button id="apagar" class="btn" onclick="preencherTela(9)">9</button>
+          <button id="apagar" class="btn" onclick="preencherTela('*')">X</button>
+        </div>
+        <div class="row">
+          <button id="apagar" class="btn" onclick="preencherTela(4)">4</button>
+          <button id="apagar" class="btn" onclick="preencherTela(5)">5</button>
+          <button id="apagar" class="btn" onclick="preencherTela(6)">6</button>
+          <button id="apagar" class="btn" onclick="preencherTela('/')">/</button>
+        </div>
+        <div class="row">
+          <button id="apagar" class="btn" onclick="preencherTela(1)">1</button>
+          <button id="apagar" class="btn" onclick="preencherTela(2)">2</button>
+          <button id="apagar" class="btn" onclick="preencherTela(3)">3</button>
+          <button id="apagar" class="btn" onclick="preencherTela('+')">+</button>
+        </div>
+        <div class="row">
+          <button id="apagar" class="btn" onclick="preencherTela('.')">.</button>
+          <button id="apagar" class="btn" onclick="preencherTela(0)">0</button>
+          <button id="apagar" class="btn" onclick="mostraResultado()">=</button>
+          <button id="apagar" class="btn" onclick="preencherTela('-')">-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</body>
+
+</html>

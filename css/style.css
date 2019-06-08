@@ -1,0 +1,39 @@
+.window{
+    background-color: #27363b;
+}
+
+.conta{
+    height: 80px;
+    width: 495px;
+    background-color: #99b998;
+    border-width: medium;
+    border-style: solid;
+    border-color: #27363b;
+    color: #27363b;
+}
+
+.btn{
+    height: 80px;
+    width: 165px;
+    background-color: #3c4a4e;
+    border-width: medium;
+    border-style: solid;
+    border-color: #27363b;
+    color: #99b998;
+    font-size: 30px;
+}
+
+.btn:hover{
+    background-color: #525e62;
+}
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.texto-conta{
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 40px;
+}

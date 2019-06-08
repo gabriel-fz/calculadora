@@ -1,0 +1,27 @@
+{
+  "name": "electron-api-demos",
+  "version": "1.0.0",
+  "description": "Utilizando Cifra de Cesar para criptografar e descriptografar arquivos e mensagens de texto",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Gabriel Fiorese Zancanela",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^3.0.4"
+  },
+  "dependencies": {
+    "electron-reload": "^1.2.5",
+    "jquery": "^3.3.1",
+    "python-shell": "^1.0.6"
+  }
+}

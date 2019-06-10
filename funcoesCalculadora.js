@@ -17,9 +17,15 @@ function digitarNum(valor) {
 
 function digitarOp(valor) {
     let b = document.querySelector('p.texto-conta')
-    if(tela === 1 || tela === 2){
-        b.innerText += valor
-        tela = 1
+    if(b.innerText[0] != null){
+        if(b.innerText.endsWith("*") || b.innerText.endsWith("/") || b.innerText.endsWith("+") || b.innerText.endsWith("-")){
+            b.innerText = b.innerText.substring(0,(b.innerText.length - 1))
+            b.innerText += valor
+            tela = 1
+        }else{
+            b.innerText += valor
+            tela = 1
+        }
     }
 }
 

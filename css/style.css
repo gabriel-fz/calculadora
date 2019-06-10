@@ -23,6 +23,10 @@
     font-size: 30px;
 }
 
+.btn-num{
+    font-weight: bold;
+}
+
 .btn:hover{
     background-color: #525e62;
 }

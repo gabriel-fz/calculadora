@@ -7,9 +7,9 @@ Se (tela = 2) -> resultado mostrado, tem que apagar a tela
 
 function digitarNum(valor) {
     let b = document.querySelector('p.texto-conta')
-    if(tela === 1){
+    if (tela === 1) {
         b.innerText += valor
-    }else{
+    } else {
         b.innerText = valor
         tela = 1
     }
@@ -17,25 +17,27 @@ function digitarNum(valor) {
 
 function digitarOp(valor) {
     let b = document.querySelector('p.texto-conta')
-    if(b.innerText[0] != null){ //Testa se a tela está sem nada escrito
-        if(b.innerText.endsWith("*") || b.innerText.endsWith("/") || b.innerText.endsWith("+") || b.innerText.endsWith("-")){
-            b.innerText = b.innerText.substring(0,(b.innerText.length - 1)) //Esclui o último caractere com o operador a ser trocado
+    if (b.innerText[0] != null) { //Testa se a tela está sem nada escrito
+        if (b.innerText.endsWith("*") || b.innerText.endsWith("/") || b.innerText.endsWith("+") || b.innerText.endsWith("-")) {
+            b.innerText = b.innerText.substring(0, (b.innerText.length - 1)) //Esclui o último caractere com o operador a ser trocado
             b.innerText += valor //Adiciona o novo operador
             tela = 1
-        }else{
+        } else {
             b.innerText += valor
             tela = 1
         }
     }
 }
 
-function mostraResultado(){
+function mostraResultado() {
     let b = document.querySelector('p.texto-conta')
-    b.innerText = eval(b.innerText)
-    tela = 2
+    if (b.innerText[0] != null) { //Testa se a tela está sem nada escrito
+        b.innerText = eval(b.innerText)
+        tela = 2
+    }
 }
 
-function delConta(){
+function delConta() {
     let b = document.querySelector('p.texto-conta')
-    b.innerText = b.innerText.substring(0,(b.innerText.length - 1)) //Apara o ultimo caractere por click
+    b.innerText = b.innerText.substring(0, (b.innerText.length - 1)) //Apara o ultimo caractere por click
 }

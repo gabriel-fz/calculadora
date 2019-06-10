@@ -1,23 +1,32 @@
-let tela
+let tela = 0
 /* 
-Se (tela = 0) -> está fazendo a conta
-Se (tela = 1) -> resultado mostrado, tem que apagar a tela
+Se (tela = 0) -> a calculadora foi iniciada
+Se (tela = 1) -> está fazendo a conta
+Se (tela = 2) -> resultado mostrado, tem que apagar a tela
 */
 
-function preencherTela(valor) {
+function digitarNum(valor) {
     let b = document.querySelector('p.texto-conta')
     if(tela === 1){
-        b.innerText = valor
-        tela = 0
-    }else{
         b.innerText += valor
+    }else{
+        b.innerText = valor
+        tela = 1
+    }
+}
+
+function digitarOp(valor) {
+    let b = document.querySelector('p.texto-conta')
+    if(tela === 1 || tela === 2){
+        b.innerText += valor
+        tela = 1
     }
 }
 
 function mostraResultado(){
     let b = document.querySelector('p.texto-conta')
     b.innerText = eval(b.innerText)
-    tela = 1
+    tela = 2
 }
 
 function delConta(){

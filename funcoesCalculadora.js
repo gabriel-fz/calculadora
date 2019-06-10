@@ -17,10 +17,10 @@ function digitarNum(valor) {
 
 function digitarOp(valor) {
     let b = document.querySelector('p.texto-conta')
-    if(b.innerText[0] != null){
+    if(b.innerText[0] != null){ //Testa se a tela está sem nada escrito
         if(b.innerText.endsWith("*") || b.innerText.endsWith("/") || b.innerText.endsWith("+") || b.innerText.endsWith("-")){
-            b.innerText = b.innerText.substring(0,(b.innerText.length - 1))
-            b.innerText += valor
+            b.innerText = b.innerText.substring(0,(b.innerText.length - 1)) //Esclui o último caractere com o operador a ser trocado
+            b.innerText += valor //Adiciona o novo operador
             tela = 1
         }else{
             b.innerText += valor
@@ -37,5 +37,5 @@ function mostraResultado(){
 
 function delConta(){
     let b = document.querySelector('p.texto-conta')
-    b.innerText = b.innerText.substring(0,(b.innerText.length - 1))
+    b.innerText = b.innerText.substring(0,(b.innerText.length - 1)) //Apara o ultimo caractere por click
 }

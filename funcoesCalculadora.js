@@ -39,5 +39,9 @@ function mostraResultado() {
 
 function delConta() {
     let b = document.querySelector('p.texto-conta')
-    b.innerText = b.innerText.substring(0, (b.innerText.length - 1)) //Apara o ultimo caractere por click
+    if (tela == 2){
+        b.innerText = null
+    }else{
+        b.innerText = b.innerText.substring(0, (b.innerText.length - 1)) //Apara o ultimo caractere por click
+    }
 }
